@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "name": "Apple",
+        "price": 2.50,
+        "imgUrl": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
+        "quantity": 0
+    },
+
+    {
+        "id": 2,
+        "name": "Banana",
+        "price": 5,
+        "imgUrl": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80",
+        "quantity": 0
+
+    },
+
+    {
+        "id": 3,
+        "name": "Pineapple",
+        "price": 10,
+        "imgUrl": "https://images.unsplash.com/photo-1490885578174-acda8905c2c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80",
+        "quantity": 0
+
+    },
+
+    {
+        "id": 4,
+        "name": "Orange",
+        "price": 5,
+        "imgUrl": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
+        "quantity": 0
+    }
+
+]
