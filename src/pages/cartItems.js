@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/cartItems.css';
-import {Elements} from '@stripe/react-stripe-js';
+// import {Elements} from '@stripe/react-stripe-js';
 // import {loadStripe} from '@stripe/stripe-js';
 // import CheckoutForm from './CheckoutForm';
 // const stripePromise = loadStripe('pk_live_dWlyEc3ajrPjHUdj8JIHRlXo');

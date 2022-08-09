@@ -19,7 +19,7 @@ function Nav(props) {
         </a>
       </div>
       <div>
-        <a id='cartBtn' href='http://localhost:3000/cart'>
+        <a id='cartBtn' href='/cart'>
           <ShoppingCartIcon fontSize='large' />
           <div className='quantity' style={ quantity === 0 ? {display: 'none'} : {display: 'block'} }> {quantity} </div>
         </a>
