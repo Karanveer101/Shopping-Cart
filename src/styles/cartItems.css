@@ -1,17 +1,31 @@
 .checkout {
+  box-sizing: border-box;
   display: grid;
   font-size: 1.2rem;
-  grid-template-columns: 150px 150px 150px;
+  grid-template-columns: repeat(auto-fit, 250px);
   grid-auto-flow: row;
   justify-content: center;
   grid-auto-columns: 150px;
   grid-auto-columns: 150px;
   gap: 20px;
   width: 550px;
-  margin: auto;
-  
+  color: white;
+  font-size: 2rem;
+  margin: auto
 }
 
+.cartPage {
+  background-color: #10b981;
+  height: 100vh;
+}
+
+.cartPage h1 {
+  background-color: #047857;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px
+}
 .wrapper {
   display: flex;
   justify-content: space-around;
@@ -20,12 +34,13 @@
 }
 
 .checkoutBtn {
-  background-color: blue;
+  background-color:  #047857;
   color: white;
   font-weight: bold;
   border-radius: 5px;
   grid-column: 3/4;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  
 }
 
 h1 {
@@ -35,24 +50,42 @@ h1 {
 }
 
 button {
-  background-color: lightblue;
+  background-color:#047857;
   border: none;
+  color: white;
+  font-size: 1.1rem;
 }
 
+button:hover {
+  cursor: pointer;
+}
 .totalPrice {
   display: flex;
   justify-content: center;
   grid-column: 3/4;
-  font-size: 1.2rem;
+  text-align: end
 }
 
 .checkoutBtn:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  transition: ease 0.4s;
 }
 
 .plusMinus {
-  width: 8%;
+
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  height: 50%;
+  margin: auto;
+}
+
+
+.cartItemName img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 10px
 }
 

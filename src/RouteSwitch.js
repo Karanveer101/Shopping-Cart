@@ -3,7 +3,6 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import App from './App';
 import Nav from './navbar/nav';
 import CartItems from './pages/cartItems';
-import Store from './pages/store';
 
 const RouteSwitch = () => {
     const[quantity, setQuantity] = useState(() => {

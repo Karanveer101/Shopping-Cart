@@ -2,7 +2,7 @@
     margin: 0px;
 }
 .topNav {
-    background-color: grey;
+    background-color: #10b981;
     overflow: hidden;
     display: flex;
     justify-content: space-around;
@@ -18,14 +18,16 @@
   }
   
   .topNav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #047857
+    ;
+
   }
   
   .topNav a.active {
-    background-color: #04AA6D;
+    background-color: #047857;
     color: white;
-    height: 100%;
+
+    transform: scale(1.2);
   }
 
   .icon {
@@ -39,7 +41,9 @@
 
   .nav {
    position: relative;
-  right: 10vw
+  right: 10vw;
+  display: flex;
+    align-items: center;
   }
 
   .icon:hover {
@@ -52,6 +56,11 @@
     display: flex;
   }
 
+  #cartBtn:hover {
+    transform: scale(1.1);
+    transition: ease 0.2s
+  }
+
   .quantity {
     color: white;
     height: 20px;
@@ -60,3 +69,7 @@
     border-radius: 5px;
     margin-top: 10px;
   }
+
+ #home, #store {
+  margin-right: 20px
+ }

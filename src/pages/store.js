@@ -2,7 +2,6 @@ import storedItems from '../data/items.json';
 import '../styles/items.css';
 import DeleteIcon from '@mui/icons-material/Delete';
 import React from 'react';
-import Nav from '../navbar/nav';
 
 function Store(props) {
   const { quantity, setQuantity, setCartItems, cartItems } = props;
@@ -100,7 +99,7 @@ function Store(props) {
 
   return (
     <div>
-      <h1>Store</h1>
+      <h2>Choose your favourite fruits</h2>
       <div className='itemWrapper'>{render}</div>
     </div>
   );

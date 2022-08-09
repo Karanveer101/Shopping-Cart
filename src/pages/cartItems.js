@@ -1,9 +1,17 @@
-import { fontWeight } from '@mui/system';
 import React from 'react';
 import '../styles/cartItems.css';
+import {Elements} from '@stripe/react-stripe-js';
+// import {loadStripe} from '@stripe/stripe-js';
+// import CheckoutForm from './CheckoutForm';
+// const stripePromise = loadStripe('pk_live_dWlyEc3ajrPjHUdj8JIHRlXo');
+
 
 function CartItems(props) {
-  
+  // const options = {
+  //   // passing the client secret obtained from the server
+  //   clientSecret: 'sk_live_...8E7u',
+  // };
+
   let totalPrice;
   const { cartItems, setCartItems, quantity, setQuantity } = props;
   console.log(props);
@@ -57,21 +65,25 @@ function CartItems(props) {
 
     return (
       <div key={item.id} className='wrapper'>
-        
-        <p>{item.name}</p>
+        <p className='cartItemName'>
+        <img alt='' src={item.imgUrl} />
+          
+          {item.name}</p>
         <div className="plusMinus">
           <button onClick={onRemove}>-</button>
           <button onClick={onAdd}>+</button>
         </div>
         <p className="price">
           {item.quantity} x ${item.price}
+          
         </p>
       </div>
     );
   });
+  
 
   return (
-    <div>
+    <div className='cartPage'>
       <h1>My Cart</h1>
       <p style={{textAlign: "center", fontSize: '1.2rem'}}>{quantity === 0 ? 'Cart is Empty' : ''}</p>
       <div className="checkout">
@@ -79,6 +91,10 @@ function CartItems(props) {
       <p className="totalPrice" style={quantity === 0 ? {display: 'none'} : {display: 'block'}}>Total Price = <span style={{fontWeight: 'bold'}}>${totalPrice}</span></p>
       <button className="checkoutBtn" style={quantity === 0 ? {display: 'none'} : {display: 'block'}}>Checkout</button>
       </div>
+      {/* <Elements stripe={stripePromise} options={options}>
+      <CheckoutForm />
+    </Elements> */}
+   
     </div>
   );
 }
