@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/cartItems.css';
-// import {Elements} from '@stripe/react-stripe-js';
-// import {loadStripe} from '@stripe/stripe-js';
-// import CheckoutForm from './CheckoutForm';
-// const stripePromise = loadStripe('pk_live_dWlyEc3ajrPjHUdj8JIHRlXo');
+import {Elements} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
+import CheckoutForm from './CheckoutForm';
+const stripePromise = loadStripe('pk_live_dWlyEc3ajrPjHUdj8JIHRlXo');
 
 
 function CartItems(props) {
@@ -89,11 +89,10 @@ function CartItems(props) {
       <div className="checkout">
       {render}
       <p className="totalPrice" style={quantity === 0 ? {display: 'none'} : {display: 'block'}}>Total Price = <span style={{fontWeight: 'bold'}}>${totalPrice}</span></p>
-      <button className="checkoutBtn" style={quantity === 0 ? {display: 'none'} : {display: 'block'}}>Checkout</button>
       </div>
-      {/* <Elements stripe={stripePromise} options={options}>
-      <CheckoutForm />
-    </Elements> */}
+      <Elements stripe={stripePromise} >
+      <CheckoutForm quantity={quantity} totalPrice={totalPrice}/>
+    </Elements>
    
     </div>
   );
